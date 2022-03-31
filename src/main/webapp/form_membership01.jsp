@@ -40,9 +40,9 @@ Home > Join the Membership
 
         취미 :
         <input type="checkbox" name="hobby" value="운동">운동
-        <input type="checkbox" name="hobby" value="독서">독서
+        <input type="checkbox" name="hobby" value="코딩">코딩
         <input type="checkbox" name="hobby" value="여행">여행
-        <input type="checkbox" name="hobby" value="음악 감상">음악 감상<br><br>
+        <input type="checkbox" name="hobby" value="독서">독서<br><br>
 
         본인 소개 :
         <textarea class="message_area" cols="50" rows="3"></textarea>
