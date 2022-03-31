@@ -13,6 +13,7 @@
 <body>
 Home > Join the Membership
 <hr>
+<%--TODO : 우편번호 검색 이용해서 주소입력 폼 추가--%>
 <form action="form_membership02.jsp" name="person_info" method="get">
     <fieldset style="width: 330px">
         <legend> 개인 정보 입력 </legend>
