@@ -29,15 +29,23 @@ Home > Personal Information Inquiry
     String[] hob = request.getParameterValues("hobby");
     String intro = request.getParameter("Introduction");
 %>
-    <p>아이디 : <%= id %></p>
-    <p>비밀번호 : <%= pw %></p>
-    <p>이름 : <%= name %></p>
-    <p>연락처 : <%= choice %> <%= ph01 %> - <%= ph02 %> - <%= ph03 %></p>
-    <p>성별 : <%= sex %></p>
-    <p>취미 : <% if (hob != null){
-    for(int count = 0; count < hob.length; count++){
-    out.println(" " + hob[count]);}} %></p>
-    <p>본인 소개 : <%= intro %></p>
+<p>아이디 : <%= id %>
+</p>
+<p>비밀번호 : <%= pw %>
+</p>
+<p>이름 : <%= name %>
+</p>
+<p>연락처 : <%= choice %> <%= ph01 %> - <%= ph02 %> - <%= ph03 %>
+</p>
+<p>성별 : <%= sex %>
+</p>
+<p>취미 : <% if (hob != null) {
+    for (int count = 0; count < hob.length; count++) {
+        out.println(" " + hob[count]);
+    }
+} %></p>
+<p>본인 소개 : <%= intro %>
+</p>
 
 </body>
 </html>
