@@ -26,8 +26,15 @@ Home > Personal Information Inquiry
     String ph03 = request.getParameter("phone3");
 
     String sex = request.getParameter("gender");
+
+    String postcode = request.getParameter("postcode");
+    String roadAddress = request.getParameter("roadAddress");
+    String detailAddress = request.getParameter("detailAddress");
+
     String[] hob = request.getParameterValues("hobby");
     String intro = request.getParameter("Introduction");
+
+
 %>
 <p>아이디 : <%= id %>
 </p>
@@ -39,6 +46,13 @@ Home > Personal Information Inquiry
 </p>
 <p>성별 : <%= sex %>
 </p>
+
+<p>우편번호 : <%= postcode %>
+</p>
+
+<p>주소 : <%= roadAddress %> <%= detailAddress %>
+</p>
+
 <p>취미 : <% if (hob != null) {
     for (int count = 0; count < hob.length; count++) {
         out.println(" " + hob[count]);
