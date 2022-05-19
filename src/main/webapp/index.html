@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h2>등록</h2>
+<form action="join.jsp" method="post" name="textform">
+    <table>
+
+        <tr>
+            <td>이름 : <br/></td>
+            <td><label>
+                <input type="text" name="name">
+            </label></td>
+        </tr>
+
+        <tr>
+            <td>전화 번호 :</td>
+            <td><label>
+                <input type="text" name="phone">
+            </label></td>
+        </tr>
+    </table>
+    <br/>
+    <input type="submit" value="회원 가입">
+    <input type="reset" value="초기화">
+</form>
+<hr/>
+<h1>검색</h1>
+<form action="search.jsp" method="get" name="textform">
+    <table>
+        <tr>
+            <td>이름으로 검색: <br/></td>
+            <td><label>
+                <input type="text" name="searchKey">
+            </label></td>
+        </tr>
+        <br/>
+    </table>
+    <input type="submit" value="검색">
+    <input type="reset" value="초기화">
+</form>
+<hr/>
+<h1>수정</h1>
+<form action="edit.jsp" method="post" name="textform">
+    <table>
+
+        <tr>
+            <td>이름 : <br/></td>
+            <td><label>
+                <input type="text" name="name">
+            </label></td>
+        </tr>
+
+        <tr>
+            <td>전화 번호 :</td>
+            <td><label>
+                <input type="text" name="phone">
+            </label></td>
+        </tr>
+    </table>
+    <input type="submit" value="수정">
+    <input type="reset" value="초기화">
+</form>
+<hr/>
+<h1>삭제</h1>
+<form action="delete.jsp" method="get" name="textform">
+    <table>
+        <tr>
+            <td>이름 : <br/></td>
+            <td><label>
+                <input type="text" name="name">
+            </label></td>
+        </tr>
+        <br/>
+    </table>
+    <input type="submit" value="삭제">
+    <input type="reset" value="초기화">
+</form>
+<hr/>
+
+</body>
+</html>
